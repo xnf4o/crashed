@@ -5,7 +5,7 @@
 
 #include "hooks/hooks.h"
 
-unsigned long __stdcall setup(void* instance) noexcept
+unsigned long __stdcall setup(void* instance)
 {
 	AllocConsole();
 	FILE* fDummy;
