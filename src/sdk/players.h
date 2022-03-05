@@ -63,22 +63,22 @@ public:
 
 	Matrix3x3& GetRotationMatrix() const noexcept
 	{
-		return *reinterpret_cast<Matrix3x3*>(std::uintptr_t(this) + 0x89C);
+		return *reinterpret_cast<Matrix3x3*>(std::uintptr_t(this) + 0x83C);
 	}
 
 	Vector3& GetPosition() const noexcept
 	{
-		return *reinterpret_cast<Vector3*>(std::uintptr_t(this) + 0x8C0);
+		return *reinterpret_cast<Vector3*>(std::uintptr_t(this) + 0x8F0);
 	}
 
 	class Player* GetPlayer() const noexcept
 	{
-		return *reinterpret_cast<class Player**>(std::uintptr_t(this) + 0xFE0);
+		return *reinterpret_cast<class Player**>(std::uintptr_t(this) + 0x1010);
 	}
 
 	UnitInfo* GetUnitInfo() const noexcept
 	{
-		return *reinterpret_cast<UnitInfo**>(std::uintptr_t(this) + 0x1038);
+		return *reinterpret_cast<UnitInfo**>(std::uintptr_t(this) + 0x1068);
 	}
 
 	std::uint8_t& GetUnitState() const noexcept
