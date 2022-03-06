@@ -63,7 +63,7 @@ public:
 
 	Matrix3x3& GetRotationMatrix() const noexcept
 	{
-		return *reinterpret_cast<Matrix3x3*>(std::uintptr_t(this) + 0x83C);
+		return *reinterpret_cast<Matrix3x3*>(std::uintptr_t(this) + 0x8CC);
 	}
 
 	Vector3& GetPosition() const noexcept
